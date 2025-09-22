@@ -1,3 +1,4 @@
+import java.lang.Math;
 
 public class Calculadora {
 	public int somar(int a, int b) {
@@ -17,5 +18,9 @@ public class Calculadora {
 			throw new IllegalArgumentException("Divisão por zero não permitida.");
 		}
 		return a / b;
+	}
+	
+	public double potencia(int base, int expoente) {
+		return Math.pow(base, expoente);
 	}
 }

@@ -33,4 +33,10 @@ class CalculadoraTest {
 		Calculadora calc = new Calculadora();
 		assertThrows(IllegalArgumentException.class, () -> calc.dividir(10, 0));
 	}
+	
+	@Test
+	void testExpoente() {
+		Calculadora calc = new Calculadora();
+		assertEquals(25, calc.potencia(5, 2));
+	}
 }
